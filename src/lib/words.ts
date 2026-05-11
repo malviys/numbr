@@ -24,11 +24,17 @@ const BELOW_TWENTY = [
 const TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
 
 const SCALES = [
-  { value: 1_000_000_000_000_000, name: "quadrillion" },
-  { value: 1_000_000_000_000, name: "trillion" },
-  { value: 1_000_000_000, name: "billion" },
-  { value: 1_000_000, name: "million" },
-  { value: 1_000, name: "thousand" },
+  { value: 1e33, name: "decillion" },
+  { value: 1e30, name: "nonillion" },
+  { value: 1e27, name: "octillion" },
+  { value: 1e24, name: "septillion" },
+  { value: 1e21, name: "sextillion" },
+  { value: 1e18, name: "quintillion" },
+  { value: 1e15, name: "quadrillion" },
+  { value: 1e12, name: "trillion" },
+  { value: 1e9, name: "billion" },
+  { value: 1e6, name: "million" },
+  { value: 1e3, name: "thousand" },
 ];
 
 export function numberToWords(value: number): string {
